@@ -1,0 +1,100 @@
+{
+    "Students": {
+        "student": [
+            {
+                "Name": {
+                    "first_name": "Rohit", 
+                    "last_name": "Tupili"
+                }, 
+                "contacts": {
+                    "mobile": "9666853006", 
+                    "Emails": {
+                        "primary": "tesrohit@gmail.com"
+                    }, 
+                    "Address": {
+                        "City": "Vijayawada", 
+                        "DoorNo": "HIG-261", 
+                        "Country": "India", 
+                        "PinCode": "520012", 
+                        "State": "Andhra Pradesh", 
+                        "Street": "H.B.Colony"
+                    }
+                }, 
+                "dob": "08-06-1994", 
+                "cgpa": "8.66", 
+                "pre_requisites": {
+                    "courses": {
+                        "xml": "n", 
+                        "no_sql": "n", 
+                        "Python": "n", 
+                        "c_programming": "y", 
+                        "data_mining": "y", 
+                        "json": "n", 
+                        "OOP": "y", 
+                        "machine_learning": "y"
+                    }, 
+                    "tools": {
+                        "pycharm": "n", 
+                        "git_hub": "n", 
+                        "mongo_db": "n"
+                    }
+                }, 
+                "id": {
+                    "no": "114", 
+                    "ps_ts": "PS", 
+                    "branch2": "B1", 
+                    "branch1": "A7", 
+                    "year": "2011"
+                }
+            }, 
+            {
+                "Name": {
+                    "first_name": "Tupili", 
+                    "last_name": "Rohit", 
+                    "middle_name": "Easwar Sai"
+                }, 
+                "contacts": {
+                    "mobile": "9666853006", 
+                    "landline": null, 
+                    "Emails": {
+                        "alternative": "eswarsairohit@yahoo.in", 
+                        "primary": "tesrohit@gmail.com"
+                    }, 
+                    "Address": {
+                        "City": "Vijayawada", 
+                        "DoorNo": "HIG-261", 
+                        "Country": "India", 
+                        "PinCode": "520012", 
+                        "State": "Andhra Pradesh", 
+                        "Street": "H.B.Colony"
+                    }
+                }, 
+                "dob": "08-06-1994", 
+                "cgpa": "8.66", 
+                "pre_requisites": {
+                    "courses": {
+                        "xml": "n", 
+                        "no_sql": "n", 
+                        "Python": "n", 
+                        "c_programming": "y", 
+                        "data_mining": "y", 
+                        "json": "n", 
+                        "OOP": "y", 
+                        "machine_learning": "y"
+                    }, 
+                    "tools": {
+                        "pycharm": "n", 
+                        "git_hub": "n", 
+                        "mongo_db": "n"
+                    }
+                }, 
+                "id": {
+                    "no": "141", 
+                    "ps_ts": "PS", 
+                    "branch1": "A7", 
+                    "year": "2011"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="https://www.w3schools.com/Rohitsstudent"
+           elementFormDefault="qualified"
+           xmlns="http://www.w3schoools.com/Rohitsstudent studnet2.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Students">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="student"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id"/>
+                <xs:element ref="Name"/>
+                <xs:element ref="dob"/>
+                <xs:element ref="cgpa"/>
+                <xs:element ref="contacts"/>
+                <xs:element ref="pre_requisites"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="id">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="year"/>
+                <xs:element ref="branch1"/>
+                <xs:element minOccurs="0" ref="branch2"/>
+                <xs:element ref="ps_ts"/>
+                <xs:element ref="no"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="year">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="2010"></xs:minInclusive>
+                <xs:maxInclusive value="2012"></xs:maxInclusive>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="branch1">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="A1"/>
+                <xs:enumeration value="A2"/>
+                <xs:enumeration value="A3"/>
+                <xs:enumeration value="A4"/>
+                <xs:enumeration value="A5"/>
+                <xs:enumeration value="A7"/>
+                <xs:enumeration value="AA"/>
+                <xs:enumeration value="B1"/>
+                <xs:enumeration value="B2"/>
+                <xs:enumeration value="B3"/>
+                <xs:enumeration value="B4"/>
+                <xs:enumeration value="B5"/>
+                <xs:enumeration value="C6"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="branch2" default="NULL">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="A1"/>
+                <xs:enumeration value="A2"/>
+                <xs:enumeration value="A3"/>
+                <xs:enumeration value="A4"/>
+                <xs:enumeration value="A5"/>
+                <xs:enumeration value="A7"/>
+                <xs:enumeration value="AA"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="ps_ts" default="PS">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="PS"/>
+                <xs:enumeration value="TS"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="no" type="xs:integer"/><!--Need to be restricted-->
+    <xs:element name="dob" type="xs:date"/>
+    <xs:element name="cgpa" type="xs:decimal"/>
+
+    <xs:element name="Name">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="first_name"/>
+                <xs:element minOccurs="0" ref="middle_name"/>
+                <xs:element ref="last_name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="first_name" type="xs:NCName"/>
+    <xs:element name="middle_name" type="xs:string"/>
+    <xs:element name="last_name" type="xs:NCName"/>
+    <xs:element name="contacts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Emails"/>
+                <xs:element ref="mobile"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Emails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Address"/>
+                <xs:element ref="primary"/>
+                <xs:element minOccurs="0" ref="alternative"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="DoorNo"/>
+                <xs:element ref="Street"/>
+                <xs:element ref="City"/>
+                <xs:element ref="PinCode"/>
+                <xs:element ref="State"/>
+                <xs:element ref="Country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="DoorNo" type="xs:string"/>
+    <xs:element name="Street" type="xs:string"/>
+    <xs:element name="City" type="xs:NCName"/>
+    <xs:element name="PinCode" type="xs:integer"/>
+    <xs:element name="State" type="xs:string"/>
+    <xs:element name="Country" type="xs:NCName"/>
+
+    <xs:element name="primary">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([a-z][A-Z][0-9])+@.(com|co.in)"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="alternative" nillable="true">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([a-z][A-Z][0-9])+@.(com|co.in)"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mobile">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([7-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9])"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="pre_requisites">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="courses"/>
+                <xs:element ref="tools"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c_programming"/>
+                <xs:element ref="OOP"/>
+                <xs:element ref="Python"/>
+                <xs:element ref="machine_learning"/>
+                <xs:element ref="data_mining"/>
+                <xs:element ref="no_sql"/>
+                <xs:element ref="xml"/>
+                <xs:element ref="json"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="c_programming" type="xs:boolean" default="false"/>
+    <xs:element name="OOP" type="xs:boolean" default="false"/>
+    <xs:element name="Python" type="xs:boolean" default="false"/>
+    <xs:element name="machine_learning" type="xs:boolean" default="false"/>
+    <xs:element name="data_mining" type="xs:boolean" default="false"/>
+    <xs:element name="no_sql" type="xs:boolean" default="false"/>
+    <xs:element name="xml" type="xs:boolean" default="false"/>
+    <xs:element name="json" type="xs:boolean" default="false"/>
+    <xs:element name="tools">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pycharm"/>
+                <xs:element ref="git_hub"/>
+                <xs:element ref="mongo_db"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pycharm" type="xs:boolean" default="false"/>
+    <xs:element name="git_hub" type="xs:boolean" default="false"/>
+    <xs:element name="mongo_db" type="xs:boolean" default="false"/>
+</xs:schema>
