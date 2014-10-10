@@ -1,0 +1,205 @@
+<Students>
+<student>
+<id>
+<year> 2011</year>
+<branch1> AA</branch1>
+<branch2> B5</branch2>
+<ps_ts> PS</ps_ts>
+<no> 445</no>
+</id>
+<Name>
+<first_name> Karthik</first_name>
+<last_name> Ellur</last_name>
+</Name>
+<dob>
+03-09-1993</dob>
+<cgpa>
+8.41</cgpa>
+<contacts>
+<Address>
+5-1-9NetajiNagarRaichur584103KarnatakaIndia</Address>
+<Emails>
+<primary>karthikellur2020@gmail.com</primary>
+</Emails>
+<mobile>9666823006</mobile>
+</contacts>
+<pre_requisites>
+<courses>
+<c_programming>1</c_programming>
+<OOP>0</OOP>
+<machine_learning>0</machine_learning>
+<data_mining>0</data_mining>
+<no_sql>0</no_sql>
+<xml>0</xml>
+<json>0</json>
+</courses>
+<tools>
+<pycharm>0</pycharm>
+<git_hub>0</git_hub>
+<mongo_db>0</mongo_db>
+</tools>
+</pre_requisites>
+</student>
+<student>
+<id>
+<year> 2011</year>
+<branch1> A7</branch1>
+<ps_ts> PS</ps_ts>
+<no> 239</no>
+</id>
+<Name>
+<first_name> Saieesh</first_name>
+<middle_name> Venkata Phani Kapil</middle_name>
+<last_name> Pillalamarri</last_name>
+</Name>
+<dob>
+28-09-1994</dob>
+<cgpa>
+8.33</cgpa>
+<contacts>
+<Address>
+5-90-18/1ChandramouliNagarGuntur522007AndhraPradeshIndia</Address>
+<Emails>
+<primary>saieesh.3456@gmail.com</primary>
+</Emails>
+<mobile>7382323023</mobile>
+</contacts>
+<pre_requisites>
+<courses>
+<c_programming>1</c_programming>
+<OOP>1</OOP>
+<machine_learning>1</machine_learning>
+<data_mining>1</data_mining>
+<no_sql>1</no_sql>
+<xml>1</xml>
+<json>1</json>
+</courses>
+<tools>
+<pycharm>1</pycharm>
+<git_hub>0</git_hub>
+<mongo_db>1</mongo_db>
+</tools>
+</pre_requisites>
+</student>
+<student>
+<id>
+<year> 2011</year>
+<branch1> A7</branch1>
+<ps_ts> PS</ps_ts>
+<no> 114</no>
+</id>
+<Name>
+<first_name> Rohit</first_name>
+<middle_name> Easwar Sai</middle_name>
+<last_name> Tupili</last_name>
+</Name>
+<dob>
+08-06-1994</dob>
+<cgpa>
+8.66</cgpa>
+<contacts>
+<Address>
+HIG-261H.B.ColonyVijayawada520012AndhraPradeshIndia</Address>
+<Emails>
+<primary>tesrohit1994@gmail.com</primary>
+</Emails>
+<mobile>9866056717</mobile>
+</contacts>
+<pre_requisites>
+<courses>
+<c_programming>1</c_programming>
+<OOP>1</OOP>
+<machine_learning>0</machine_learning>
+<data_mining>1</data_mining>
+<no_sql>1</no_sql>
+<xml>0</xml>
+<json>0</json>
+</courses>
+<tools>
+<pycharm>0</pycharm>
+<git_hub>0</git_hub>
+<mongo_db>0</mongo_db>
+</tools>
+</pre_requisites>
+</student>
+<student>
+<id>
+<year> 2011</year>
+<branch1> H1</branch1>
+<ps_ts> 03</ps_ts>
+<no> 023</no>
+</id>
+<Name>
+<first_name> Goudar</first_name>
+<last_name> Gourish</last_name>
+</Name>
+<dob>
+05-09-1991</dob>
+<cgpa>
+8.9</cgpa>
+<contacts>
+<Address>
+7/9-8-6BhagyaNagar ColonyAurangabad431001MaharastraIndia</Address>
+<Emails>
+<primary>Gaorish@gmail.com</primary>
+</Emails>
+<mobile>9517532586</mobile>
+</contacts>
+<pre_requisites>
+<courses>
+<c_programming>1</c_programming>
+<OOP>1</OOP>
+<machine_learning>0</machine_learning>
+<data_mining>1</data_mining>
+<no_sql>1</no_sql>
+<xml>0</xml>
+<json>0</json>
+</courses>
+<tools>
+<pycharm>0</pycharm>
+<git_hub>0</git_hub>
+<mongo_db>0</mongo_db>
+</tools>
+</pre_requisites>
+</student>
+<student>
+<id>
+<year> 2011</year>
+<branch1> C6</branch1>
+<ps_ts> PS</ps_ts>
+<no> 541</no>
+</id>
+<Name>
+<first_name> Anil</first_name>
+<last_name> Boda</last_name>
+</Name>
+<dob>
+31-12-1992</dob>
+<cgpa>
+8.5</cgpa>
+<contacts>
+<Address>
+5-8-9TapeswaramKakinada533340AndhraPradeshIndia</Address>
+<Emails>
+<primary>anil.bphc@gmail.com</primary>
+</Emails>
+<mobile>9866156717</mobile>
+</contacts>
+<pre_requisites>
+<courses>
+<c_programming>1</c_programming>
+<OOP>1</OOP>
+<machine_learning>0</machine_learning>
+<data_mining>1</data_mining>
+<no_sql>0</no_sql>
+<xml>0</xml>
+<json>0</json>
+</courses>
+<tools>
+<pycharm>0</pycharm>
+<git_hub>0</git_hub>
+<mongo_db>0</mongo_db>
+</tools>
+</pre_requisites>
+</student>
+</Students>
